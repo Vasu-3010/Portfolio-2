@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vasu Viroja — Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
+    <script defer src="portfolio.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a class="nav-logo" href="home.html">Vasu<em>Viroja</em></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button id="theme-btn" type="button" title="Toggle theme"></button>
+        <div class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page">
+      <section class="home-layout">
+        <div class="home-left">
+          <div>
+            <div class="hero-eyebrow anim">
+              Python Developer<span class="available-dot">Available</span>
+            </div>
+            <h1 class="hero-title anim d1">
+              Vasu <em>Viroja</em><span class="rule"></span>
+            </h1>
+            <p class="hero-sub anim d2" style="font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 1.125rem; line-height: 1.6;">Junior Python developer crafting efficient applications with clean design and scalable backend architecture.</p>
+
+            <div class="hero-actions anim d3">
+              <a class="btn btn-primary" href="projects.html">View Work ↗</a>
+              <a class="btn btn-ghost" href="contact.html">Get In Touch</a>
+            </div>
+          </div>
+          <div class="home-bottom anim d4">
+            <div class="stat-row">
+              <div>
+                <div class="stat-n">4+</div>
+                <div class="stat-l">Projects Built</div>
+              </div>
+              <div>
+                <div class="stat-n">3+</div>
+                <div class="stat-l">Months Expireance</div>
+              </div>
+              <div>
+                <div class="stat-n">8+</div>
+                <div class="stat-l">Skills</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-right">
+          <div class="home-photo">
+            <img
+              src="vasu.png"
+              alt="Vasu Viroja"
+              onerror="this.style.display='none';document.getElementById('photo-ph').style.display='flex'"
+            />
+            <div class="home-photo-placeholder" id="photo-ph" style="display: none">
+              🧑‍💻
+            </div>
+          </div>
+          <div class="home-right-footer anim d2">
+            <div class="eyebrow">Currently based in</div>
+            <div class="location">📍 Gujarat, India · Open to Work</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
